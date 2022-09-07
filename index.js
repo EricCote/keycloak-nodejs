@@ -19,8 +19,8 @@ app.use(session({
 app.use(keycloak.middleware());
 app.use(cors());
 
-var testController = require("./controller/test-controller.js");
-app.use("/test", testController);
+var apiController = require("./controller/api-controller.js");
+app.use("/api", apiController);
 
 app.get("/", function (req, res) {
   res.send("Server is up!");

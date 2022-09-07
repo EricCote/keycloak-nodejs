@@ -15,11 +15,12 @@ router.get("/admin", keycloak.protect("app-admin"), function (req, res) {
   res.json("Hello Admin");
 });
 
+//needs either one of these two roles
 router.get(
-  "/all-user",
+  "/either-role",
   keycloak.protect(["app-user", "app-admin"]),
   function (req, res) {
-    res.json("Hello All User");
+    res.json("Hello user or admin");
   }
 );
 
