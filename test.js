@@ -15,7 +15,7 @@ async function init() {
 
   if (!auth) {
     loginBtn.onclick = (evt) => keycloak.login();
-    loginBtn.innerText = "Login";
+    loginBtn.innerText = "Login ";
   } else {
     loginBtn.onclick = (evt) => keycloak.logout();
     loginBtn.innerText = "Logout";
