@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-micro",
+  "name": "service-using-keycloak",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
